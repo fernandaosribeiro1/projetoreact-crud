@@ -1,0 +1,125 @@
+/* src/styles/globals.css */
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+  padding: 30px;
+  color: #1e293b;
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+}
+
+/* FORMULÁRIO */
+
+form {
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+form h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #2563eb;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+form input {
+  display: block;
+  margin: 14px 0;
+  padding: 12px;
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* BOTÕES */
+
+button {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+button:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #cbd5f5;
+  cursor: not-allowed;
+}
+
+.btn-delete {
+  background: #ef4444;
+  margin-left: 10px;
+}
+
+.btn-cancel {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+/* CARD DO CARRO */
+
+.car-card {
+  background: #ffffff;
+  padding: 20px;
+  margin: 18px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: all 0.2s;
+}
+
+.car-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.car-info h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.car-info p {
+  margin: 6px 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.car-info .price {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.car-actions {
+  display: flex;
+  gap: 8px;
+}
